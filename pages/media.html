@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media & Press - CineFrame</title>
+    <meta name="description" content="Access high-resolution images, trailers, press coverage, and downloadable press kit for CineFrame animated short film. Professional media resources for journalists and industry professionals." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcineframe3157back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Film</a>
+                        <a href="about.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Story</a>
+                        <a href="team.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Team</a>
+                        <a href="characters.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Characters</a>
+                        <a href="media.html" class="text-accent font-medium px-3 py-2 rounded-md text-sm transition-fast">Press</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-secondary">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Film</a>
+                <a href="about.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Story</a>
+                <a href="team.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Team</a>
+                <a href="characters.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Characters</a>
+                <a href="media.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Press</a>
+                <a href="resources.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="font-playfair text-4xl md:text-6xl font-semibold mb-6">Media & Press</h1>
+                <p class="text-xl text-text-secondary mb-8 leading-relaxed">
+                    Professional media resources, high-resolution assets, and comprehensive press materials for journalists, festival programmers, and industry professionals.
+                </p>
+                
+                <!-- Quick Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button id="download-press-kit" class="bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-fast flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Download Press Kit</span>
+                    </button>
+                    <button id="contact-press" class="border-2 border-accent text-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent hover:text-primary transition-fast">
+                        Contact Press Team
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="py-8 bg-background border-b border-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn active bg-accent text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="all">
+                        All Media
+                    </button>
+                    <button class="filter-btn bg-surface text-text-secondary hover:bg-secondary hover:text-text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="trailers">
+                        Trailers
+                    </button>
+                    <button class="filter-btn bg-surface text-text-secondary hover:bg-secondary hover:text-text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="stills">
+                        Production Stills
+                    </button>
+                    <button class="filter-btn bg-surface text-text-secondary hover:bg-secondary hover:text-text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="character-art">
+                        Character Art
+                    </button>
+                    <button class="filter-btn bg-surface text-text-secondary hover:bg-secondary hover:text-text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="behind-scenes">
+                        Behind the Scenes
+                    </button>
+                    <button class="filter-btn bg-surface text-text-secondary hover:bg-secondary hover:text-text-primary px-4 py-2 rounded-lg text-sm font-medium transition-fast" data-filter="press-coverage">
+                        Press Coverage
+                    </button>
+                </div>
+
+                <!-- Search and Sort -->
+                <div class="flex items-center gap-4">
+                    <div class="relative">
+                        <input type="text" id="media-search" placeholder="Search media..." class="bg-surface border border-secondary rounded-lg px-4 py-2 pl-10 text-text-primary placeholder-text-secondary focus:outline-none focus:border-accent transition-fast" />
+                        <svg class="w-5 h-5 text-text-secondary absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <button id="reset-filters" class="text-accent hover:text-accent/80 transition-fast">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trailers Section -->
+    <section class="py-16 bg-background media-section" data-category="trailers">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Official Trailers</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">High-quality video content optimized for various platforms and screening requirements.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Main Trailer -->
+                <div class="lg:col-span-2 bg-surface rounded-2xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1489599162946-648229acc019?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CineFrame Official Trailer" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=1'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/40 flex items-center justify-center">
+                            <button class="w-16 h-16 bg-accent rounded-full flex items-center justify-center hover:bg-accent/90 transition-fast">
+                                <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2">Official Trailer</h3>
+                        <p class="text-text-secondary mb-4">Full-length promotional trailer featuring key scenes and emotional highlights. Perfect for festival submissions and press coverage.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">2:30 Duration</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">4K Available</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Multiple Formats</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex-1 bg-accent text-primary px-4 py-2 rounded-lg font-medium hover:bg-accent/90 transition-fast">
+                                Download HD
+                            </button>
+                            <button class="px-4 py-2 border border-accent text-accent rounded-lg font-medium hover:bg-accent hover:text-primary transition-fast">
+                                Embed Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaser Trailer -->
+                <div class="bg-surface rounded-2xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CineFrame Teaser" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/40 flex items-center justify-center">
+                            <button class="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent/90 transition-fast">
+                                <svg class="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-playfair text-lg font-semibold mb-2">Teaser Trailer</h3>
+                        <p class="text-text-secondary text-sm mb-3">Short-form content perfect for social media and quick previews.</p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs">30s</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded-full text-xs">1080p</span>
+                        </div>
+                        <button class="w-full bg-secondary text-text-primary px-3 py-2 rounded-lg text-sm font-medium hover:bg-accent hover:text-primary transition-fast">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Stills -->
+    <section class="py-16 bg-surface media-section" data-category="stills">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Production Stills</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">High-resolution frames from the film showcasing key moments and visual artistry.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Still 1 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luna's Discovery Scene" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Luna's Discovery</h3>
+                        <p class="text-text-secondary text-sm">Key emotional moment showcasing character development</p>
+                    </div>
+                </div>
+
+                <!-- Still 2 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Atlas Guardian Scene" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Atlas the Guardian</h3>
+                        <p class="text-text-secondary text-sm">Powerful moment demonstrating strength and protection</p>
+                    </div>
+                </div>
+
+                <!-- Still 3 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c9c8e8d4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sage Wisdom Scene" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Sage's Wisdom</h3>
+                        <p class="text-text-secondary text-sm">Contemplative scene highlighting ancient knowledge</p>
+                    </div>
+                </div>
+
+                <!-- Still 4 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1489599162946-648229acc019?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Climactic Scene" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Climactic Moment</h3>
+                        <p class="text-text-secondary text-sm">Dramatic peak showcasing visual storytelling mastery</p>
+                    </div>
+                </div>
+
+                <!-- Still 5 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Artistic Composition" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Artistic Composition</h3>
+                        <p class="text-text-secondary text-sm">Beautiful frame demonstrating visual artistry</p>
+                    </div>
+                </div>
+
+                <!-- Still 6 -->
+                <div class="group cursor-pointer bg-background rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Emotional Resolution" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <div class="flex gap-2">
+                                <button class="bg-accent text-primary p-2 rounded-lg hover:bg-accent/90 transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="bg-surface text-text-primary p-2 rounded-lg hover:bg-secondary transition-fast">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Emotional Resolution</h3>
+                        <p class="text-text-secondary text-sm">Touching conclusion showcasing narrative closure</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-fast">
+                    Download All Stills (ZIP)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Art -->
+    <section class="py-16 bg-background media-section" data-category="character-art">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Character Art</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Concept art, character designs, and visual development showcasing the creative process.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Character Art 1 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luna Character Design" class="w-full h-full object-cover hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Luna Design</h3>
+                        <p class="text-text-secondary text-sm">Character concept art</p>
+                    </div>
+                </div>
+
+                <!-- Character Art 2 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Atlas Character Design" class="w-full h-full object-cover hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Atlas Design</h3>
+                        <p class="text-text-secondary text-sm">Guardian character art</p>
+                    </div>
+                </div>
+
+                <!-- Character Art 3 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c9c8e8d4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sage Character Design" class="w-full h-full object-cover hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Sage Design</h3>
+                        <p class="text-text-secondary text-sm">Wise character concept</p>
+                    </div>
+                </div>
+
+                <!-- Character Art 4 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Environment Design" class="w-full h-full object-cover hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium mb-1">Environment Art</h3>
+                        <p class="text-text-secondary text-sm">World design concepts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press Coverage -->
+    <section class="py-16 bg-surface media-section" data-category="press-coverage">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Press Coverage</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Media coverage, reviews, and interviews showcasing industry recognition and audience response.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Press Article 1 -->
+                <article class="bg-background rounded-xl p-6 shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Animation Magazine Logo" class="w-12 h-12 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-1">Animation Magazine</h3>
+                            <p class="text-text-secondary text-sm">September 15, 2025</p>
+                        </div>
+                    </div>
+                    <h4 class="font-medium mb-3">"A Masterpiece of Emotional Storytelling"</h4>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "CineFrame proves that animation's power to move audiences transcends traditional boundaries. This is storytelling at its finest..."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-xs">★★★★★</span>
+                        <a href="javascript:void(0)" class="text-accent hover:text-accent/80 transition-fast text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Press Article 2 -->
+                <article class="bg-background rounded-xl p-6 shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Variety Logo" class="w-12 h-12 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-1">Variety</h3>
+                            <p class="text-text-secondary text-sm">August 28, 2025</p>
+                        </div>
+                    </div>
+                    <h4 class="font-medium mb-3">"Festival Circuit Standout"</h4>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "CineFrame has been making waves across the international festival circuit, earning standing ovations and critical acclaim..."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="bg-success/20 text-success px-3 py-1 rounded-full text-xs">Featured</span>
+                        <a href="javascript:void(0)" class="text-accent hover:text-accent/80 transition-fast text-sm">Read Full Article</a>
+                    </div>
+                </article>
+
+                <!-- Press Article 3 -->
+                <article class="bg-background rounded-xl p-6 shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="The Hollywood Reporter Logo" class="w-12 h-12 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-1">The Hollywood Reporter</h3>
+                            <p class="text-text-secondary text-sm">August 10, 2025</p>
+                        </div>
+                    </div>
+                    <h4 class="font-medium mb-3">"Technical Excellence Meets Artistic Vision"</h4>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "The animation quality in CineFrame sets a new standard for independent short films, combining technical mastery with profound storytelling..."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-xs">Interview</span>
+                        <a href="javascript:void(0)" class="text-accent hover:text-accent/80 transition-fast text-sm">Watch Interview</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="javascript:void(0)" class="inline-flex items-center space-x-2 border-2 border-accent text-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent hover:text-primary transition-fast">
+                    <span>View All Press Coverage</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festival Laurels -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Festival Recognition</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Official selections, awards, and laurels available for promotional use.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Laurel 1 -->
+                <div class="bg-surface rounded-xl p-6 text-center shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">Sundance Film Festival</h3>
+                    <p class="text-text-secondary text-sm mb-3">Official Selection 2025</p>
+                    <button class="bg-accent text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/90 transition-fast">
+                        Download Laurel
+                    </button>
+                </div>
+
+                <!-- Laurel 2 -->
+                <div class="bg-surface rounded-xl p-6 text-center shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">Annecy International</h3>
+                    <p class="text-text-secondary text-sm mb-3">Best Short Film Winner</p>
+                    <button class="bg-accent text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/90 transition-fast">
+                        Download Laurel
+                    </button>
+                </div>
+
+                <!-- Laurel 3 -->
+                <div class="bg-surface rounded-xl p-6 text-center shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">SXSW</h3>
+                    <p class="text-text-secondary text-sm mb-3">Audience Choice Award</p>
+                    <button class="bg-accent text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/90 transition-fast">
+                        Download Laurel
+                    </button>
+                </div>
+
+                <!-- Laurel 4 -->
+                <div class="bg-surface rounded-xl p-6 text-center shadow-card hover:shadow-cinematic transition-cinematic">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">Berlin International</h3>
+                    <p class="text-text-secondary text-sm mb-3">Critics' Choice Selection</p>
+                    <button class="bg-accent text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent/90 transition-fast">
+                        Download Laurel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-4">Social Buzz</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Real-time social media mentions and audience engagement across platforms.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Twitter Feed -->
+                <div class="bg-background rounded-xl p-6 shadow-card">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                        <h3 class="font-playfair text-lg font-semibold">Twitter</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"Just watched #CineFrame and I'm absolutely blown away! The animation is stunning and the story hits deep. 🎬✨"</p>
+                            <p class="text-text-secondary text-xs">@AnimationLover • 2h</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"CineFrame is proof that short films can pack more emotional punch than feature-length movies. Incredible work! 👏"</p>
+                            <p class="text-text-secondary text-xs">@FilmCritic • 4h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Feed -->
+                <div class="bg-background rounded-xl p-6 shadow-card">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <h3 class="font-playfair text-lg font-semibold">Instagram</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"Behind the scenes magic ✨ The attention to detail in every frame is incredible #CineFrame #Animation"</p>
+                            <p class="text-text-secondary text-xs">@studioartist • 1d</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"Can't stop thinking about this beautiful short film. The characters feel so real! 💫"</p>
+                            <p class="text-text-secondary text-xs">@animationfan • 2d</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Feed -->
+                <div class="bg-background rounded-xl p-6 shadow-card">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <h3 class="font-playfair text-lg font-semibold">LinkedIn</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"CineFrame demonstrates the power of independent animation to compete at the highest levels. Exceptional work from the team."</p>
+                            <p class="text-text-secondary text-xs">Industry Professional • 3d</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-4">
+                            <p class="text-sm mb-2">"Proud to see such innovative storytelling in the animation industry. This is the future of short-form content."</p>
+                            <p class="text-text-secondary text-xs">Animation Director • 5d</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Press Team -->
+    <section class="py-16 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-surface rounded-2xl p-12 shadow-cinematic">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-6">Press Inquiries</h2>
+                <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                    Need additional materials, interviews, or custom assets? Our press team is here to help with all your coverage needs.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="text-left">
+                        <h3 class="font-playfair text-lg font-semibold mb-3">Press Contact</h3>
+                        <div class="space-y-2 text-text-secondary">
+                            <p>Sarah Mitchell</p>
+                            <p>Press Relations Manager</p>
+                            <p>press@cineframe.com</p>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-playfair text-lg font-semibold mb-3">Available Services</h3>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• Custom press kits</li>
+                            <li>• Interview arrangements</li>
+                            <li>• High-res asset requests</li>
+                            <li>• Screening arrangements</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-fast">
+                    Contact Press Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-secondary py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        An award-winning animated short film that explores the depths of human connection through stunning visual storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-text-secondary hover:text-accent transition-fast">About the Film</a></li>
+                        <li><a href="team.html" class="text-text-secondary hover:text-accent transition-fast">Meet the Team</a></li>
+                        <li><a href="characters.html" class="text-text-secondary hover:text-accent transition-fast">Characters</a></li>
+                        <li><a href="media.html" class="text-text-secondary hover:text-accent transition-fast">Press & Media</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Press Kit</a></li>
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Educational Materials</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Host a Screening</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 CineFrame. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const mediaSections = document.querySelectorAll('.media-section');
+        const searchInput = document.getElementById('media-search');
+        const resetButton = document.getElementById('reset-filters');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-accent', 'text-primary');
+                    btn.classList.add('bg-surface', 'text-text-secondary');
+                });
+                this.classList.add('active', 'bg-accent', 'text-primary');
+                this.classList.remove('bg-surface', 'text-text-secondary');
+                
+                // Show/hide sections
+                mediaSections.forEach(section => {
+                    if (filter === 'all' || section.getAttribute('data-category') === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Reset filters
+        resetButton.addEventListener('click', function() {
+            // Reset filter buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-accent', 'text-primary');
+                btn.classList.add('bg-surface', 'text-text-secondary');
+            });
+            filterButtons[0].classList.add('active', 'bg-accent', 'text-primary');
+            filterButtons[0].classList.remove('bg-surface', 'text-text-secondary');
+            
+            // Show all sections
+            mediaSections.forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // Clear search
+            searchInput.value = '';
+        });
+
+        // Search functionality (basic implementation)
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            // This would typically filter content based on search term
+            // For demo purposes, we'll just show a simple implementation
+            console.log('Searching for:', searchTerm);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

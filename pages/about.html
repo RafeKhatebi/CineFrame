@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About CineFrame - The Story Behind the Animation</title>
+    <meta name="description" content="Discover the artistic vision, creative journey, and cultural significance behind CineFrame, an award-winning animated short film that explores human connection through innovative storytelling." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcineframe3157back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Film</a>
+                        <a href="about.html" class="text-accent font-medium px-3 py-2 rounded-md text-sm transition-fast">Story</a>
+                        <a href="team.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Team</a>
+                        <a href="characters.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Characters</a>
+                        <a href="media.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Press</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-secondary">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Film</a>
+                <a href="about.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Story</a>
+                <a href="team.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Team</a>
+                <a href="characters.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Characters</a>
+                <a href="media.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Press</a>
+                <a href="resources.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Behind the scenes animation studio" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=1'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+                <span class="block text-text-primary">The Story</span>
+                <span class="block text-accent text-3xl md:text-4xl lg:text-5xl font-medium mt-2">Behind CineFrame</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed">
+                A journey through the artistic vision, creative process, and cultural impact of an animated short that redefines storytelling boundaries.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filmmaker's Statement -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Filmmaker's Statement</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            </div>
+
+            <div class="bg-background rounded-2xl p-8 md:p-12 shadow-cinematic">
+                <blockquote class="text-xl md:text-2xl leading-relaxed text-text-primary italic mb-8">
+                    "Animation has always been more than entertainment to me—it's a language that speaks directly to the soul. With CineFrame, I wanted to explore how we connect with each other in an increasingly fragmented world. Every frame was crafted to bridge the gap between the digital and the deeply human."
+                </blockquote>
+                
+                <div class="prose prose-lg prose-invert max-w-none">
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        In contemporary animation discourse, we often discuss technical innovation while overlooking emotional resonance. CineFrame emerged from a desire to prove that animated shorts can carry the same narrative weight and cultural significance as their live-action counterparts. The medium's unique ability to distill complex emotions into visual metaphors became our greatest storytelling tool.
+                    </p>
+                    
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        The film's seven-minute runtime represents two years of intensive creative exploration. Each second was earned through countless iterations, collaborative discussions, and a relentless pursuit of authentic emotional truth. We approached every creative decision through the lens of human connection—how do we make audiences feel less alone in their own experiences?
+                    </p>
+                    
+                    <p class="text-text-secondary leading-relaxed">
+                        This work stands as testament to animation's evolving role in contemporary cinema. It's not just about moving pictures; it's about moving hearts, challenging perceptions, and creating shared experiences that transcend cultural and linguistic boundaries.
+                    </p>
+                </div>
+
+                <div class="flex items-center mt-8 pt-8 border-t border-secondary">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Director portrait" class="w-16 h-16 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    <div>
+                        <p class="font-semibold text-text-primary">Maya Chen</p>
+                        <p class="text-text-secondary">Director & Creative Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Timeline -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Creative Journey</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">From initial spark to festival acclaim—the milestones that shaped our story.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-accent h-full hidden md:block"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="md:w-5/12 md:text-right">
+                            <div class="bg-surface rounded-2xl p-6 shadow-card">
+                                <h3 class="font-playfair text-xl font-semibold mb-2 text-accent">Initial Concept</h3>
+                                <p class="text-text-secondary mb-3">The spark that started everything—a simple sketch exploring human connection in digital spaces.</p>
+                                <span class="text-accent font-mono text-sm">March 2023</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="md:w-5/12"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                        <div class="md:w-5/12">
+                            <div class="bg-surface rounded-2xl p-6 shadow-card">
+                                <h3 class="font-playfair text-xl font-semibold mb-2 text-accent">Character Development</h3>
+                                <p class="text-text-secondary mb-3">Months of iteration brought Luna, Atlas, and Sage to life through hundreds of design explorations.</p>
+                                <span class="text-accent font-mono text-sm">June 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="md:w-5/12 md:text-right">
+                            <div class="bg-surface rounded-2xl p-6 shadow-card">
+                                <h3 class="font-playfair text-xl font-semibold mb-2 text-accent">Animation Breakthrough</h3>
+                                <p class="text-text-secondary mb-3">Discovered the unique visual language that would define the film's emotional core.</p>
+                                <span class="text-accent font-mono text-sm">September 2023</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="md:w-5/12"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                        <div class="md:w-5/12">
+                            <div class="bg-surface rounded-2xl p-6 shadow-card">
+                                <h3 class="font-playfair text-xl font-semibold mb-2 text-accent">Production Complete</h3>
+                                <p class="text-text-secondary mb-3">Final render completed after 18 months of intensive creative collaboration.</p>
+                                <span class="text-accent font-mono text-sm">January 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="relative flex items-center md:justify-between">
+                        <div class="md:w-5/12 md:text-right">
+                            <div class="bg-surface rounded-2xl p-6 shadow-card">
+                                <h3 class="font-playfair text-xl font-semibold mb-2 text-accent">Festival Circuit</h3>
+                                <p class="text-text-secondary mb-3">World premiere at Annecy, followed by selections at 15+ international festivals.</p>
+                                <span class="text-accent font-mono text-sm">March 2024</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background hidden md:block"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artistic Influences -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Artistic Influences</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">The visual and narrative inspirations that shaped our creative vision.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Influence 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Studio Ghibli influence" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-cinematic"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <p class="text-text-primary text-sm">Emotional storytelling through environmental detail and character subtlety.</p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-2">Studio Ghibli</h3>
+                    <p class="text-text-secondary">Environmental storytelling mastery</p>
+                </div>
+
+                <!-- Influence 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract art influence" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-cinematic"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <p class="text-text-primary text-sm">Color theory and emotional resonance through abstract visual language.</p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-2">Abstract Expressionism</h3>
+                    <p class="text-text-secondary">Emotional color palettes</p>
+                </div>
+
+                <!-- Influence 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl mb-6 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contemporary animation" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-cinematic"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <p class="text-text-primary text-sm">Modern techniques merged with traditional storytelling principles.</p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold mb-2">Contemporary Animation</h3>
+                    <p class="text-text-secondary">Technical innovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Achievements -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Technical Innovation</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">Breakthrough techniques that brought our artistic vision to life.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Technical Content -->
+                <div class="space-y-8">
+                    <div class="bg-surface rounded-2xl p-8 shadow-card">
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-accent">Hybrid Animation Pipeline</h3>
+                        <p class="text-text-secondary mb-4">
+                            Developed a unique workflow combining traditional 2D principles with cutting-edge 3D techniques, allowing for unprecedented emotional expressiveness while maintaining technical precision.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">2D/3D Hybrid</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Custom Shaders</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Procedural Animation</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface rounded-2xl p-8 shadow-card">
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-accent">Emotional Color Mapping</h3>
+                        <p class="text-text-secondary mb-4">
+                            Created a dynamic color system that responds to character emotional states, using algorithmic color theory to enhance narrative impact without overwhelming the viewer.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Dynamic Palettes</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Mood Algorithms</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Color Psychology</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface rounded-2xl p-8 shadow-card">
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-accent">Spatial Audio Design</h3>
+                        <p class="text-text-secondary mb-4">
+                            Implemented immersive soundscapes that respond to visual elements, creating a synesthetic experience where audio and visual elements inform each other organically.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">3D Audio</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Reactive Sound</span>
+                            <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Binaural Mix</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Visualization -->
+                <div class="relative">
+                    <div class="bg-surface rounded-2xl p-8 shadow-cinematic">
+                        <h3 class="font-playfair text-xl font-semibold mb-6 text-center">Frame-by-Frame Progression</h3>
+                        
+                        <!-- Animation Frames Visualization -->
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="aspect-square bg-background rounded-lg border-2 border-accent/30 flex items-center justify-center">
+                                <span class="text-accent font-mono text-sm">Frame 001</span>
+                            </div>
+                            <div class="aspect-square bg-background rounded-lg border-2 border-accent/50 flex items-center justify-center">
+                                <span class="text-accent font-mono text-sm">Frame 012</span>
+                            </div>
+                            <div class="aspect-square bg-background rounded-lg border-2 border-accent flex items-center justify-center">
+                                <span class="text-accent font-mono text-sm">Frame 024</span>
+                            </div>
+                        </div>
+
+                        <!-- Technical Stats -->
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Total Frames</span>
+                                <span class="text-accent font-mono">10,080</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Render Hours</span>
+                                <span class="text-accent font-mono">2,400+</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Unique Assets</span>
+                                <span class="text-accent font-mono">847</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Color Variations</span>
+                                <span class="text-accent font-mono">156</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Impact -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Cultural Impact</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">Positioning animation as a legitimate art form in contemporary discourse.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Academic Recognition -->
+                <div class="bg-background rounded-2xl p-8 shadow-card">
+                    <h3 class="font-playfair text-2xl font-semibold mb-6 text-accent">Academic Recognition</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-accent pl-6">
+                            <blockquote class="text-text-secondary italic mb-2">
+                                "CineFrame represents a paradigm shift in how we understand animated storytelling's capacity for emotional depth."
+                            </blockquote>
+                            <cite class="text-accent text-sm">— Dr. Sarah Martinez, Animation Studies, UCLA</cite>
+                        </div>
+                        
+                        <div class="border-l-4 border-accent pl-6">
+                            <blockquote class="text-text-secondary italic mb-2">
+                                "A masterclass in visual narrative that challenges traditional boundaries between commercial and artistic animation."
+                            </blockquote>
+                            <cite class="text-accent text-sm">— Prof. James Liu, Film Theory, NYU</cite>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-secondary">
+                        <h4 class="font-semibold mb-4">Educational Integration</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• Curriculum inclusion at 12+ animation programs</li>
+                            <li>• Case study in 3 film theory textbooks</li>
+                            <li>• Featured in Animation Quarterly special issue</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Industry Impact -->
+                <div class="bg-background rounded-2xl p-8 shadow-card">
+                    <h3 class="font-playfair text-2xl font-semibold mb-6 text-accent">Industry Influence</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-accent pl-6">
+                            <blockquote class="text-text-secondary italic mb-2">
+                                "This film proves that animated shorts can carry the same cultural weight as feature films."
+                            </blockquote>
+                            <cite class="text-accent text-sm">— Animation Magazine Editorial</cite>
+                        </div>
+                        
+                        <div class="border-l-4 border-accent pl-6">
+                            <blockquote class="text-text-secondary italic mb-2">
+                                "A technical and artistic achievement that will influence animation production for years to come."
+                            </blockquote>
+                            <cite class="text-accent text-sm">— Variety Film Review</cite>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-secondary">
+                        <h4 class="font-semibold mb-4">Professional Recognition</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li>• Featured in 5 industry conference presentations</li>
+                            <li>• Technique workshops at major studios</li>
+                            <li>• Mentorship program for emerging animators</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Voices from the Community</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">Hear from collaborators, audiences, and industry professionals about their CineFrame experience.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-card">
+                    <div class="relative mb-4 aspect-video bg-background rounded-lg overflow-hidden cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Industry collaborator testimonial" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <svg class="w-12 h-12 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">Alex Rodriguez</h3>
+                    <p class="text-accent text-sm mb-3">Lead Animator, Pixar</p>
+                    <p class="text-text-secondary text-sm">"Working on CineFrame challenged everything I thought I knew about character animation..."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-card">
+                    <div class="relative mb-4 aspect-video bg-background rounded-lg overflow-hidden cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c9c8e8d4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Festival programmer testimonial" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <svg class="w-12 h-12 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">Emma Thompson</h3>
+                    <p class="text-accent text-sm mb-3">Festival Programmer, Annecy</p>
+                    <p class="text-text-secondary text-sm">"From the first frame, we knew this was something special. The emotional depth is extraordinary..."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-card">
+                    <div class="relative mb-4 aspect-video bg-background rounded-lg overflow-hidden cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Audience member testimonial" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-cinematic">
+                            <svg class="w-12 h-12 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mb-2">David Kim</h3>
+                    <p class="text-accent text-sm mb-3">Animation Student, CalArts</p>
+                    <p class="text-text-secondary text-sm">"This film changed how I think about storytelling. It's become my north star as an artist..."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-background rounded-2xl p-12 shadow-cinematic">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-6">Experience the Journey</h2>
+                <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                    Ready to dive deeper into the world of CineFrame? Explore our characters, meet the team, or discover upcoming screenings.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="characters.html" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-fast flex items-center space-x-2 shadow-cinematic">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                        <span>Meet the Characters</span>
+                    </a>
+                    
+                    <a href="team.html" class="border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent hover:text-primary transition-fast">
+                        Discover the Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-secondary py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        An award-winning animated short film that explores the depths of human connection through stunning visual storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-text-secondary hover:text-accent transition-fast">About the Film</a></li>
+                        <li><a href="team.html" class="text-text-secondary hover:text-accent transition-fast">Meet the Team</a></li>
+                        <li><a href="characters.html" class="text-text-secondary hover:text-accent transition-fast">Characters</a></li>
+                        <li><a href="media.html" class="text-text-secondary hover:text-accent transition-fast">Press & Media</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Press Kit</a></li>
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Educational Materials</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Host a Screening</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 CineFrame. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team - CineFrame | Meet the Creative Minds Behind the Film</title>
+    <meta name="description" content="Meet the award-winning team behind CineFrame. Discover the talented filmmakers, animators, and artists who brought this acclaimed animated short to life." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcineframe3157back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Film</a>
+                        <a href="about.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Story</a>
+                        <a href="team.html" class="text-accent font-medium px-3 py-2 rounded-md text-sm transition-fast">Team</a>
+                        <a href="characters.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Characters</a>
+                        <a href="media.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Press</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm transition-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-secondary">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Film</a>
+                <a href="about.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Story</a>
+                <a href="team.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Team</a>
+                <a href="characters.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Characters</a>
+                <a href="media.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Press</a>
+                <a href="resources.html" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-fast">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                    <span class="block text-text-primary">The Creative</span>
+                    <span class="block text-accent">Collective</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Meet the award-winning team of visionaries, storytellers, and craftspeople who brought CineFrame from concept to festival acclaim.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-text-secondary">
+                    <span class="bg-accent/20 text-accent px-3 py-1 rounded-full">15+ Years Combined Experience</span>
+                    <span class="bg-accent/20 text-accent px-3 py-1 rounded-full">50+ Festival Selections</span>
+                    <span class="bg-accent/20 text-accent px-3 py-1 rounded-full">International Collaborators</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Director Profile -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Director Image -->
+                <div class="relative">
+                    <div class="aspect-square overflow-hidden rounded-2xl shadow-cinematic">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marcus Chen - Director" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                    <!-- Behind the scenes overlay -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 overflow-hidden rounded-xl shadow-card">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marcus directing" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                    </div>
+                </div>
+
+                <!-- Director Info -->
+                <div>
+                    <div class="mb-6">
+                        <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-2">Marcus Chen</h2>
+                        <p class="text-accent text-xl font-medium mb-4">Director & Creative Vision</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-surface text-text-primary px-3 py-1 rounded-full text-sm">SXSW Winner</span>
+                            <span class="bg-surface text-text-primary px-3 py-1 rounded-full text-sm">Annecy Selection</span>
+                            <span class="bg-surface text-text-primary px-3 py-1 rounded-full text-sm">Emmy Nominee</span>
+                        </div>
+                    </div>
+
+                    <blockquote class="text-lg text-text-secondary italic mb-6 border-l-4 border-accent pl-6">
+                        "Marcus brings a rare combination of technical mastery and emotional intelligence to animated storytelling. His work transcends entertainment to become art."
+                        <cite class="block text-accent font-medium mt-2 not-italic">— Animation Magazine</cite>
+                    </blockquote>
+
+                    <div class="space-y-4 mb-8">
+                        <div>
+                            <h3 class="font-semibold text-text-primary mb-2">Notable Works</h3>
+                            <ul class="text-text-secondary space-y-1">
+                                <li>• "Fragments of Time" (2023) - Sundance Official Selection</li>
+                                <li>• "Digital Dreams" (2022) - Annie Award Winner</li>
+                                <li>• "The Last Frame" (2021) - Cannes Critics' Week</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary mb-2">Education & Background</h3>
+                            <p class="text-text-secondary">MFA Animation, CalArts • 8 years at Pixar Animation Studios • Former Creative Director at Studio Ghibli</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Collaborators -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Key Collaborators</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">The core creative team that shaped every frame, sound, and emotion of CineFrame.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lead Animator -->
+                <div class="bg-background rounded-2xl p-8 shadow-card hover:shadow-cinematic transition-cinematic group">
+                    <div class="relative mb-6">
+                        <div class="aspect-square overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616c9c8e8d4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Rodriguez - Lead Animator" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-2">Sarah Rodriguez</h3>
+                    <p class="text-accent font-medium mb-4">Lead Animator</p>
+                    <p class="text-text-secondary text-sm mb-4">Former Disney animator with 12 years of character animation expertise. Brought Luna's emotional journey to life through nuanced performance animation.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">Disney Veteran</span>
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">Annie Award</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sound Designer -->
+                <div class="bg-background rounded-2xl p-8 shadow-card hover:shadow-cinematic transition-cinematic group">
+                    <div class="relative mb-6">
+                        <div class="aspect-square overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="David Kim - Sound Designer" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-2">David Kim</h3>
+                    <p class="text-accent font-medium mb-4">Sound Designer</p>
+                    <p class="text-text-secondary text-sm mb-4">Emmy-nominated sound designer who crafted the immersive audio landscape. His work on CineFrame creates emotional depth through innovative sound storytelling.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">Emmy Nominee</span>
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">Dolby Atmos</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Composer -->
+                <div class="bg-background rounded-2xl p-8 shadow-card hover:shadow-cinematic transition-cinematic group">
+                    <div class="relative mb-6">
+                        <div class="aspect-square overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elena Vasquez - Composer" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-2">Elena Vasquez</h3>
+                    <p class="text-accent font-medium mb-4">Composer</p>
+                    <p class="text-text-secondary text-sm mb-4">Award-winning composer whose orchestral score elevates CineFrame's emotional impact. Her music seamlessly blends classical and contemporary elements.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">ASCAP Award</span>
+                        <span class="bg-surface text-text-primary px-2 py-1 rounded text-xs">Berklee Alumni</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Org Chart -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Production Team</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">The full collaborative network that brought CineFrame from concept to completion.</p>
+            </div>
+
+            <!-- Org Chart -->
+            <div class="relative">
+                <!-- Director at top -->
+                <div class="flex justify-center mb-12">
+                    <div class="bg-surface rounded-xl p-6 shadow-card text-center max-w-xs">
+                        <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-lg font-semibold mb-1">Marcus Chen</h3>
+                        <p class="text-accent text-sm">Director</p>
+                    </div>
+                </div>
+
+                <!-- Department Heads -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-surface rounded-xl p-4 shadow-card text-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 11H7v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v6z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Sarah Rodriguez</h4>
+                        <p class="text-accent text-xs">Animation Lead</p>
+                    </div>
+
+                    <div class="bg-surface rounded-xl p-4 shadow-card text-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">David Kim</h4>
+                        <p class="text-accent text-xs">Sound Design</p>
+                    </div>
+
+                    <div class="bg-surface rounded-xl p-4 shadow-card text-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Elena Vasquez</h4>
+                        <p class="text-accent text-xs">Composer</p>
+                    </div>
+
+                    <div class="bg-surface rounded-xl p-4 shadow-card text-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 6h-2l-1-2H6L5 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-sm mb-1">Alex Thompson</h4>
+                        <p class="text-accent text-xs">Visual Effects</p>
+                    </div>
+                </div>
+
+                <!-- Supporting Team -->
+                <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">Maya Patel</h5>
+                        <p class="text-text-secondary text-xs">Concept Artist</p>
+                    </div>
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">James Wilson</h5>
+                        <p class="text-text-secondary text-xs">Character Designer</p>
+                    </div>
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">Lisa Chang</h5>
+                        <p class="text-text-secondary text-xs">Background Artist</p>
+                    </div>
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">Roberto Silva</h5>
+                        <p class="text-text-secondary text-xs">Lighting Artist</p>
+                    </div>
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">Anna Kowalski</h5>
+                        <p class="text-text-secondary text-xs">Editor</p>
+                    </div>
+                    <div class="bg-surface rounded-lg p-3 shadow-card text-center">
+                        <h5 class="font-medium text-xs mb-1">Tom Bradley</h5>
+                        <p class="text-text-secondary text-xs">Producer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Behind the Scenes Gallery -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">Behind the Scenes</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">Witness the collaborative magic that happens when passionate artists come together to create something extraordinary.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- BTS Image 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team brainstorming session" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">Creative Brainstorming</h3>
+                    <p class="text-text-secondary text-sm">Early concept development sessions where the team explored visual styles and narrative approaches.</p>
+                </div>
+
+                <!-- BTS Image 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Animation workstation" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">Animation in Progress</h3>
+                    <p class="text-text-secondary text-sm">Sarah Rodriguez working on key character animation sequences that define Luna's emotional arc.</p>
+                </div>
+
+                <!-- BTS Image 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sound recording session" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">Sound Design Session</h3>
+                    <p class="text-text-secondary text-sm">David Kim crafting the immersive soundscape that brings CineFrame's world to life.</p>
+                </div>
+
+                <!-- BTS Image 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">Team Review</h3>
+                    <p class="text-text-secondary text-sm">Collaborative review sessions where the team refined every detail to achieve festival-quality excellence.</p>
+                </div>
+
+                <!-- BTS Image 5 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/06/15/adult-1867743_1280.jpg?q=80&w=2940&auto=format&fit=crop" alt="Final rendering" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">Final Rendering</h3>
+                    <p class="text-text-secondary text-sm">The technical team working through final render passes and quality control before festival submission.</p>
+                </div>
+
+                <!-- BTS Image 6 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-video">
+                        <img src="https://images.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg?q=80&w=2940&auto=format&fit=crop" alt="Celebration moment" class="w-full h-full object-cover group-hover:scale-105 transition-cinematic" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-cinematic flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold mt-4 mb-2">First Festival Selection</h3>
+                    <p class="text-text-secondary text-sm">The team celebrating CineFrame's first official festival selection—a moment of pure joy and validation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Testimonials -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold mb-6">What Our Team Says</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">Hear from the artists themselves about their experience creating CineFrame.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-surface rounded-2xl p-8 shadow-card">
+                    <blockquote class="text-lg text-text-secondary italic mb-6">
+                        "Working on CineFrame was a career-defining experience. Marcus's vision pushed us all to explore new creative territories, and the collaborative energy was unlike anything I've experienced in my 12 years in animation."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-accent font-semibold">SR</span>
+                        </div>
+                        <div>
+                            <cite class="text-text-primary font-semibold not-italic">Sarah Rodriguez</cite>
+                            <p class="text-accent text-sm">Lead Animator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-surface rounded-2xl p-8 shadow-card">
+                    <blockquote class="text-lg text-text-secondary italic mb-6">
+                        "The sound design for CineFrame required us to create an entirely new emotional language. Every team member brought their A-game, and the result speaks for itself through our festival success."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-accent font-semibold">DK</span>
+                        </div>
+                        <div>
+                            <cite class="text-text-primary font-semibold not-italic">David Kim</cite>
+                            <p class="text-accent text-sm">Sound Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Team CTA -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-background rounded-2xl p-12 shadow-cinematic">
+                <h2 class="font-playfair text-3xl md:text-4xl font-semibold mb-6">Connect with Our Team</h2>
+                <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                    Interested in collaborating, interviewing our team, or learning more about our creative process? We'd love to hear from you.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="javascript:void(0)" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-fast flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Contact Team</span>
+                    </a>
+                    
+                    <a href="media.html" class="border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent hover:text-primary transition-fast">
+                        Press Inquiries
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-secondary py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <rect x="2" y="12" width="2" height="8" fill="currentColor"/>
+                            <rect x="28" y="12" width="2" height="8" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">CineFrame</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        An award-winning animated short film that explores the depths of human connection through stunning visual storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-text-secondary hover:text-accent transition-fast">About the Film</a></li>
+                        <li><a href="team.html" class="text-text-secondary hover:text-accent transition-fast">Meet the Team</a></li>
+                        <li><a href="characters.html" class="text-text-secondary hover:text-accent transition-fast">Characters</a></li>
+                        <li><a href="media.html" class="text-text-secondary hover:text-accent transition-fast">Press & Media</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Press Kit</a></li>
+                        <li><a href="resources.html" class="text-text-secondary hover:text-accent transition-fast">Educational Materials</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Host a Screening</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-fast">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 CineFrame. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-fast">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
